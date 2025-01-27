@@ -1,13 +1,17 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", serif;
+
+
+  * {
+    font-family: "Press Start 2P", serif;
+    font-weight: 100;
     font-style: normal;
+   
   }
-
+  
+  
+  
+ 
   body {
     background: linear-gradient(to bottom, rgb(85, 200, 254), #fff);
     text-align: center;
@@ -30,9 +34,68 @@
 
   .pokemon_img{
     position: absolute;
-    bottom: 160px;
-    text-align: center;
-    left: 220px;
-    height: 175px;
+    bottom: 35%;
+    left: 37%;
+    height: 30%;
+    transform: translate(10%,-10%);
   }
 
+  .pokemon_data{
+    text-align: left;
+    position: absolute;
+    color: rgb(72, 72, 72);
+    font-weight: 400;
+    font-size: 6px;
+    top: 62%;
+    right: 45%;
+    transform: translate(3%,-10%);    
+  }
+
+  .pokemon_number{
+    line-height: 1.8;
+    color: rgb(102, 102, 102);
+
+  }
+
+  .pokemon_name{
+    text-transform: capitalize;
+
+  }
+  
+  
+  
+  @media screen and (min-width: 340px) and (max-width: 399px) {
+    .pokemon_data{
+      font-size: 4px;
+
+    }
+  }
+
+@media screen and (min-width: 400px) and (max-width: 459px) {
+    .pokemon_data{
+      font-size: 5px;
+
+    }
+  }
+
+  @media screen and (min-width: 460px) and (max-width: 600px) {
+    .pokemon_data{
+      font-size: 6px;
+
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1287px) {
+    .pokemon_data{
+      font-size: 7px;
+
+    }
+  }
+  
+  @media screen and (min-width: 1287px) and (max-width: 1400px) {
+    .pokemon_data{
+      font-size: 7.5px;
+
+    }
+  }
+  
