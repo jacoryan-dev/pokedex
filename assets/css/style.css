@@ -16,14 +16,16 @@
     background: linear-gradient(to bottom, rgb(85, 200, 254), #fff);
     text-align: center;
     min-height: 100vh;
+    position: relative;
     
   }
 
   main{
+    position: relative;
     margin-top: 2%;
     display: inline-block;
     padding: 15px;
-    position: relative;
+    max-width: 80%;
     
   }
 
@@ -34,26 +36,25 @@
 
   .pokemon_img{
     position: absolute;
-    bottom: 35%;
-    left: 37%;
-    height: 30%;
+    bottom: 40%;
+    left: 40%;
+    height: 25%;
     transform: translate(10%,-10%);
   }
 
   .pokemon_data{
-    text-align: left;
     position: absolute;
+    text-align: left;
     color: rgb(72, 72, 72);
     font-weight: 400;
     font-size: 6px;
     top: 62%;
     right: 45%;
-    transform: translate(3%,-10%);    
   }
 
   .pokemon_number{
     line-height: 1.8;
-    color: rgb(102, 102, 102);
+    color: rgba(102, 102, 102, 0.647);
 
   }
 
@@ -62,7 +63,59 @@
 
   }
   
+  .form{
+    position: absolute;
+    background-color: green;
+    width: 50%;
+    top: 75%;
+    left: 29%;
+  }
+
+  .input_search{ /* ENTRAR NO GITHUB PARA VER O CÓDIGO E CORRIGIR OS ERROS*/
+    position: absolute;
+    display: flex;
+    width: 30%;
+    padding: 5%;
+    left: 22.5%;
+    bottom: %;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: -2px 2px 0 #888, -3px 3px 0 #333;
+  }
+
+  input::placeholder{
+    font-size: 8px;
+    transform: scale(0.85);
+    transform-origin: -15%;
+    letter-spacing: -2px; /* Diminui o espaçamento entre as letras */
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 150%;
+    padding-top: 30%;
+    color: rgba(0, 0, 0, 0.532);
+  }
+
+  .buttons{
+    position: absolute;
+    width: 70%;
+    top: 76%;
+    left: 26.5%;
+
+  }
   
+   button {
+    color: rgb(0, 0, 0);
+    font-size: clamp(8px, 5vw, 0.1 rem);
+    background-color: #5c5c5c;
+    box-shadow: -1px 1px 0 #222, -1px 2px 0 #000;
+  }
+
+   button:active {
+    background-color: ;
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+   }
+
+
   
   @media screen and (min-width: 340px) and (max-width: 399px) {
     .pokemon_data{
@@ -98,4 +151,18 @@
 
     }
   }
+  
+  @media screen and (min-width: 340px) and (max-width: 540px) {
+    .input_search{
+      position: absolute;
+    display: flex;
+    width: 26%;
+    padding: 4%;
+    left: 22.5%;
+    transform: translate(1%,-44%);
+    border-radius: 10%;
+
+    }
+  }
+
   
