@@ -71,13 +71,12 @@
     left: 29%;
   }
 
-  .input_search{ /* ENTRAR NO GITHUB PARA VER O CÓDIGO E CORRIGIR OS ERROS*/
+  .input_search{ 
     position: absolute;
     display: flex;
     width: 30%;
     padding: 5%;
     left: 22.5%;
-    bottom: %;
     border-radius: 5px;
     border: 2px solid black;
     box-shadow: -2px 2px 0 #888, -3px 3px 0 #333;
@@ -103,16 +102,13 @@
   }
   
    button {
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: clamp(8px, 5vw, 0.1 rem);
     background-color: #5c5c5c;
-    box-shadow: -1px 1px 0 #222, -1px 2px 0 #000;
   }
 
    button:active {
-    background-color: ;
-    box-shadow: inset -4px 4px 0 #222;
-    font-size: 0.9rem;
+    font-size: 0.2rem;
    }
 
 
@@ -152,17 +148,185 @@
     }
   }
   
-  @media screen and (min-width: 340px) and (max-width: 540px) {
-    .input_search{
+  
+
+  /*Query Buttons*/
+
+  @media screen and (min-width: 640px) and (max-width: 699px) {
+    .buttons{
       position: absolute;
-    display: flex;
-    width: 26%;
-    padding: 4%;
-    left: 22.5%;
-    transform: translate(1%,-44%);
-    border-radius: 10%;
+      width: 70%;
+      top: 75%;
+      left: 26.2%;
+
+
 
     }
   }
 
+  @media screen and (min-width: 640px) and (max-width: 699px) {
+    button{
+      font-size:6px;
+      padding: 3px 3px;
+
+    }
+  }
+
+  @media screen and (min-width: 580px) and (max-width: 640px) {
+    .buttons{
+      position: absolute;
+      width: 69.5%;
+      top: 74.5%;
+      left: 26.5%;
+
+
+    }
+  }
+
+  @media screen and (min-width: 580px) and (max-width: 640px) {
+    button{
+      font-size:6px;
+      padding: 4px 3px;
+    }
+  }
+
+  @media screen and (min-width: 540px) and (max-width: 580px) {
+    .buttons{
+      position: absolute;
+      width: 69.5%;
+      top: 74%;
+      left: 26.5%;
+
+
+    }
+  }
+
+  @media screen and (min-width: 540px) and (max-width: 580px) {
+    button{
+      font-size:6px;
+      padding: 2px 3px;
+    }
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 540px) {
+    .buttons{
+      position: absolute;
+      width: 69%;
+      top: 73.5%;
+      left: 26.5%;
+
+
+    }
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 540px) {
+    button{
+      font-size:6px;
+      padding: 2px 3px;
+    }
+  }
+
+  @media screen and (min-width: 460px) and (max-width: 500px) {
+    .buttons{
+      position: absolute;
+      width: 69%;
+      top: 73%;
+      left: 26.5%;
+
+
+    }
+  }
+
+  @media screen and (min-width: 460px) and (max-width: 500px) {
+    button{
+      font-size:6px;
+      padding: 2px 2px;
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 460px) {
+    .buttons{
+      position: absolute;
+      width: 69%;
+      top: 72%;
+      left: 26.5%;
+
+
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 460px) {
+    button{
+      font-size:6px;
+      padding: 0.7px 2px;
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 400px) {
+    .buttons{
+      position: absolute;
+      width: 69%;
+      top: 71.5%;
+      left: 26.5%;
+
+
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 400px) {
+    button{
+      font-size:6px;
+      padding: 0.2px 1px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 420px) and (max-width: 520px) {
+    .form{
+      position: absolute;
+      background-color: green;
+      width: 50%;
+      top: 73%;
+      left: 29%;
+    }
+  }
+
+  @media screen and (min-width: 430px) and (max-width: 699px) {
+    input::placeholder{
+      font-size: 6px;
+      transform: scale(0.85);
+      transform-origin: -15%;
+      letter-spacing: -2px; /* Diminui o espaçamento entre as letras */
+      text-align: left; /* Alinha o texto à esquerda */
+      width: 150%;
+      padding-top: 30%;
+      color: rgba(0, 0, 0, 0.532);
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 430px) {
+    input::placeholder{
+      font-size: 5px;
+      transform: scale(0.85);
+      transform-origin: -15%;
+      letter-spacing: -2px; /* Diminui o espaçamento entre as letras */
+      text-align: left; /* Alinha o texto à esquerda */
+      width: 150%;
+      padding-top: 30%;
+      color: rgba(0, 0, 0, 0.532);
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 430px) {
+    .input_search{ 
+      position: absolute;
+      display: flex;
+      width: 30%;
+      padding: 3%;
+      left: 22.5%;
+      border-radius: 5px;
+      border: 2px solid black;
+      box-shadow: -2px 2px 0 #888, -3px 3px 0 #333;
+    }
+  }
   
